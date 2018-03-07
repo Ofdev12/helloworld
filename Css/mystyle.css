@@ -1,0 +1,82 @@
+/* Add a dark background color with a little bit see-through */
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+/* On hover, the links will turn white */
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#29292c !important;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+
+/* Dropdown links */
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+/* Footer */
+footer{
+    padding: 60px;
+    padding-top: 20px;
+    background-color: #2d2d30;
+    color: #d5d5d5;
+}
+/* Social network */
+#fb, #tw, #ig, #gp{
+    width: 50px;
+    height: 50px;
+    display: inline;
+    position: absolute;
+}
+
+#fb{
+    background-image: url(logos_sociaux.jpg);
+    background-position: -1px 0px;
+}
+#tw{
+    background-image: url(logos_sociaux.jpg);
+    background-position: -54px 0px;
+
+}
+#ig{
+    background-image: url(logos_sociaux.jpg);
+    background-position: -55px -54px;
+
+}
+#gp{
+    background-image: url(logos_sociaux.jpg);
+    background-position: -1px -54px;
+}
+footer p{
+  margin-top: 20px;
+}
+#myCarousel{
+    margin-top:  50px;
+}
+
