@@ -92,7 +92,7 @@ const makeModal = (src, desc) => `
                  <h4 class="modal-title"> pictures</h4>
             </div>
             <div class="modal-body">
-                 <img class="bigPicture" src="Image/${src}.jpg" alt="arc de triomphe">
+                 <img class="bigPicture" src="Image/img/${src}.jpg" alt="arc de triomphe">
                  <div class = descBig>${desc}</div>
             </div>
             <div class= "modal-footer">
