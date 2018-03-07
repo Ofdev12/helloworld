@@ -1,0 +1,208 @@
+/* Add a dark background color with a little bit see-through */
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+
+
+/* Add a gray color to all navbar links */
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+
+
+/* On hover, the links will turn white */
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+
+
+/* The active link */
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+
+
+/* Remove border color from the collapsible button */
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+
+
+/* Dropdown */
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+
+
+/* Dropdown links */
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+
+
+/* On hover, the dropdown links will turn red */
+
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+
+footer {
+    padding: 45px;
+    background-color: #2d2d30;
+    color: #d5d5d5;
+}
+
+#fb,
+#tw,
+#ig,
+#gp {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    position: absolute;
+}
+
+#fb {
+    background-image: url(logos_sociaux.jpg);
+    background-position: -1px 0px;
+}
+
+#tw {
+    background-image: url(logos_sociaux.jpg);
+    background-position: -54px 0px;
+}
+
+#ig {
+    background-image: url(logos_sociaux.jpg);
+    background-position: -55px -54px;
+}
+
+#gp {
+    background-image: url(logos_sociaux.jpg);
+    background-position: -1px -54px;
+}
+
+
+
+/*Début du CSS pour le prix*/
+
+body {
+    font-family: Montserrat;
+}
+
+h1 {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2d2d30;
+}
+
+.Lorem {
+    padding: 30px;
+    margin-top: 10px;
+    text-align: center
+}
+
+table {
+    border: 1px solid lightgrey;
+    margin-bottom: 75px;
+    margin-top: 75px;
+    color: #2d2d30
+}
+
+th {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+
+.fline {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    background-color: #f2f2f2
+}
+
+input[type=text],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    resize: none;
+}
+#message {
+    padding-top: inherit 5px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+input[type=submit] {
+    background-color: #2d2d30;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 75px;
+    margin-top: 30px;
+    border: 1px solid #2d2d30
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #2d2d30;
+    border-radius: 4px
+}
+
+label {
+    margin-top: 10px
+}
+
+.image {
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    max-width: 150%
+    min-width: 80%;
+    margin-top: 35px;
+
+}
+.imgg {
+    text-align: center;
+}
+
+select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    resize: none;
+    background-color: white;
+    color: #666666
+}

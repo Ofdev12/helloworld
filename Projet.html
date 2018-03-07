@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Contact </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Logos</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#band">GALLERY</a></li>
+                        <li><a href="#contact">PRICE AND CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-lg-8"> Prices & Contact </h1>
+        </div>
+        <section id="présentation">
+            <div class="row">
+                <div class="col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-3 imgg">
+                    <img src="http://placehold.it/150" alt="Photo du photographe" class="image">
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-2 col-md-6 col-md-offset-1 col-lg-4  em">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </section>
+        <section id="prix">
+            <div class="row">
+                <table class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+                    <tr>
+                        <th class="fline">SIZE</th>
+                        <th class="fline">Simple</th>
+                        <th class="fline">HD</th>
+                        <th class="fline">With frame</th>
+                    </tr>
+                    <tr>
+                        <th>60x60</th>
+                        <th>50 €</th>
+                        <th>80 €</th>
+                        <th>110 €</th>
+                    </tr>
+                    <tr>
+                        <th>120x120</th>
+                        <th>90 €</th>
+                        <th>120 €</th>
+                        <th>140 €</th>
+                    </tr>
+                    <tr>
+                        <th>160x160</th>
+                        <th>140 €</th>
+                        <th>180 €</th>
+                        <th>200 €</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="Contact">
+            <form>
+                <div class="row">
+                    <label for="first name" class="col-xs-offset-1">Name: </label>
+                    <br>
+                    <input type="text" name="fname" placeholder="Name.." id="fname" class="col-xs-offset-1" />
+                </div>
+                <div class="row">
+                    <label for="last name" class="col-xs-offset-1">Subject: </label>
+                    <br>
+                    <input type="text" name="Subject" placeholder="Subject.." id="lname" class="col-xs-offset-1" />
+                </div>
+                <div class="row">
+                    <label for="textarea" class="col-xs-offset-1">Country: </label>
+                    <br>
+                    <select name="country" class="col-xs-offset-1">
+                        <option value="Selection" selected="selected" class="col-xs-offset-1">Select a country.. </option>
+                        <option value="France">France </option>
+                        <option value="Etats_Unis">United States </option>
+                        <option value="Germany">Germany </option>
+                        <option value="United_kingdoms">United Kingdoms</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="textarea" class="col-xs-offset-1">Message: </label>
+                    <br>
+                    <textarea name="message" placeholder="Your message.." id="message" class="col-xs-offset-1" maxlength="400" onkeyup="reste(this.value);"></textarea>
+                    <br />
+                    <span id="caracteres" class="col-xs-offset-1">400</span> characters left
+                    <script type="text/javascript">
+                    function reste(texte) {
+                        var restants = 400 - texte.length;
+                        document.getElementById('caracteres').innerHTML = restants;
+                    }
+                    </script>
+                </div>
+                <div class="row ">
+                    <input type="submit" value="Send your Message " id="submit" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
+                </div>
+                <div class=row>
+                </div>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-offset-2 col-md-offset-1 col-xs-12 col-md-6">
+                    <p>Copyright Wildo Codak Professional Photographer 2017 - 2018</p>
+                </div>
+                <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-0 col-xs-1 col-md-1">
+                    <a href="https://www.facebook.com" id="fb" target="_blank"></a>
+                </div>
+                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
+                    <a href="https://www.twitter.com" id="tw" target="_blank"></a>
+                </div>
+                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
+                    <a href="https://www.instagram.com" id="ig" target="_blank"></a>
+                </div>
+                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
+                    <a href="https://plus.google.com" id="gp" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
