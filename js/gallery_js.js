@@ -50,32 +50,6 @@ bout3Elt.addEventListener("click", function(e){
 
 })
 
-/*const makeModal = (src, desc) => `
-<div class ="col-xs-12">
-    <button type="button" class${src}="btn btn-info btn_lg" data-toggle="modal" data-target="#${src}">
-        <img src="img/450px/${src}.jpg" alt ="arc de triomphe" id = "img1">
-    </button>
-    <img src="img/450px/${src}.jpg" alt ="pyramid louvre")>
-</div>
-
-<div id="${src}" class="modal fade" role ="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type ="button" class="close" data-dismiss ="modal">&times;</button>
-                 <h4 class="modal-title"> pictures</h4>
-            </div>
-            <div class="modal-body">
-                 <img class="bigPicture" src="img/${src}.jpg" alt="arc de triomphe">
-                 <div class = descBig>${desc}</div>
-            </div>
-            <div class= "modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-     </div>
-</div>
-`*/
 
 /*fonctions fléchées : syntaxe + plus courte que les expression de fonction 
 voir https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Fonctions/Fonctions_fl%C3%A9ch%C3%A9es

@@ -1,20 +1,16 @@
 .marge {
 	margin-top : 70px;
 	margin-bottom: 60px;
-	/*margin-left : 60px;
-	margin-right: 60px;*/
 }
 
-/*.container-fluid {
-	border :1px solid green;
-}*/
+
 
 body {
 	background : url("background/rockywall/rockywall.png");
 }
 
 .container-fluid {
-		background : url("background/rockywall/rrockywall.png");
+	background : url("background/rockywall/rockywall.png");
 }
 
 h1 {
@@ -60,134 +56,71 @@ h1 {
 	text-align:center;
 }
 
+.btn{
+	border : none !important; 
+	background-color : transparent;
+}
+image {
+	border : none !important;
+}
+
 .col-xs-3 {
 	border : 1px solid blue;
 }
 
 /*Mise en forme de la fenetre modale https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img*/
 .bigPicture {
-   /* border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;*/
-    max-height : 100%;
-    max-width : 100%;
+   
+    max-height : 80vh;
+    /*max-width : 100%;*/
+    /*max-height : 100%;*/
+    max-width : 90vw;
+
+    border: 5px solid white;
 }
 
+.modal {
 
+    max-height: 100%; /* Full height */
+  	max-width: 100%; /* Full height */
+    background-color : rgba(0,0,0,0.7);
+    border : 1px solid white;
+}
 
-/* The Modal (background) */
 .modal-dialog {
-	/*display : block;*/
-	width: 100%;
+
+	/*border : 2px solid green;*/
+	background-color : transparent;
+	color : white;
+	width : auto;
+    height : auto;
+/
     
 }
+
+.modal-header {
+	background-color : #2d2d30;
+}
+
 
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+    /*display: block;
+    width: 100%;*/
+    /*max-width: 700px;*/
+    background-color : rgba(0,0,0,0.82);
+    width : auto;
+    height : auto;
+    text-align : center;
+
+    /*background-color : #2d2d30;
+    border : 1px solid red;*/
 }
 
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-   /* height: 150px;*/
-    border: 1px solid red;
+.modal-boby {
+	/*border : 10px solid purple;
+		width: 700px;
+	background-color : blue;*/
 }
-
-/* Add Animation */
-/*.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-/*.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-/*@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-/*.modal, .modal-hearder, .modal-body {
-	background-color : #2d2d30;
-	opacity : 0.9;
-	z-index: 2;
-	color : white;
-}
-
-.modal-title, .modal-content {
-	background-color : black;
-	color : white;
-}
-
-
-
-
-.bigPicture {
-	max-height : 80vh;
-	max-width : 80vw;
-	opacity:1;
-	z-index: 3 ;
-	margin:auto;
-
-}
-
-.modal-body 
-{
-	margin: auto;
-	width : 1200px !important;
-	border : 1px green;
-}
-
-.modal-dialog
-
-{
-
-	margin: auto;
-	width : 1200px !important;
-	border : 1px green;
-}*/
 
