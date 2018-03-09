@@ -92,7 +92,7 @@ const makeModal = (src, desc) => `
                  <h4 class="modal-title"> pictures</h4>
             </div>
             <div class="modal-body">
-                 <img class="bigPicture" src="Image/${src}.jpg" alt="arc de triomphe">
+                 <img class="bigPicture" src="Image/img/${src}.jpg" alt="arc de triomphe">
                  <div class = descBig>${desc}</div>
             </div>
             <div class= "modal-footer">
@@ -103,10 +103,18 @@ const makeModal = (src, desc) => `
 </div>
 `
 
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('louvre_001', 'le louvre de nuit. oui je travaille beaucoup la nuit !');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('louvre_001', 'Le louvre de nuit. oui je travaille beaucoup la nuit !');
 modalJs1.innerHTML = modalJs1.innerHTML + makeModal('arc_de_triomphe_002', 'La pyramid du louvre de nuit !!!!!!!!!!!!!!!!!!!');
-	
-
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_003','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('invalide_001','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_002','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_003','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_001','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_005','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('invalide_003','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_002','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('arc_de_triomphe_003','');
+modalJs1.innerHTML = modalJs1.innerHTML + makeModal('notre_dame_002','');
 
 	/*+ makeModal('arc_de_triomphe_xl_002', 'pouet')*/
 //créer modal
