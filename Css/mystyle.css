@@ -39,7 +39,11 @@
 .dropdown-menu li a {
     color: #000 !important;
 }
+/* Carousel */
 
+#myCarousel{
+    margin-top:  50px;
+}
 /* Footer */
 footer{
     padding: 60px;
@@ -76,7 +80,3 @@ footer{
 footer p{
   margin-top: 20px;
 }
-#myCarousel{
-    margin-top:  50px;
-}
-
