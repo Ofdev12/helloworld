@@ -1,12 +1,14 @@
 .marge {
-	margin-top : 70px;
+	margin-top : 50px;
 	margin-bottom: 60px;
 }
 
 
 
 body {
-	background : url("background/rockywall/rockywall.png");
+	background-image: url(../Image/rockywall.png);
+  box-shadow: inset 0px -100px 400px 150px rgba(0,0,0,0.3);
+  font-family: Montserrat;
 }
 
 .container-fluid {
@@ -15,7 +17,9 @@ body {
 
 h1 {
 	padding : 10px;
-	padding-bottom:20px;
+	padding-bottom:100px;
+  padding-top: 40px;
+  font-size: 5em;
 }
 
 .descTheme {
