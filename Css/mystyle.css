@@ -40,6 +40,54 @@
     color: #000 !important;
 }
 
+
+
+
+    /* Code page d'accueil */
+
+body{
+    background-image: url(../Image/rockywall.png);
+
+    box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 0;
+}
+
+
+article{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 5px 5px grey;
+}
+
+.marginTop{
+    margin-top: 70px;
+}
+
+.paddingImg{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.paddingTxt{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.centerBloc{ 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.circleImg{
+    border-radius: 100%;
+}
+
+.floatright{
+    float: right;
+}
+
+
 /* Footer */
 footer{
     padding: 60px;
@@ -56,21 +104,21 @@ footer{
 }
 
 #fb{
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -1px 0px;
 }
 #tw{
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -54px 0px;
 
 }
 #ig{
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -55px -54px;
 
 }
 #gp{
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -1px -54px;
 }
 footer p{
@@ -79,4 +127,3 @@ footer p{
 #myCarousel{
     margin-top:  50px;
 }
-
