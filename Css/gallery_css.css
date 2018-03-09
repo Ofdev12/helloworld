@@ -1,0 +1,262 @@
+.marge {
+	margin-top : 70px;
+	margin-bottom: 60px;
+	/*margin-left : 60px;
+	margin-right: 60px;*/
+}
+
+/*.container-fluid {
+	border :1px solid green;
+}*/
+
+body {
+	background : url("background/rockywall/rockywall.png");
+}
+
+.container-fluid {
+		background : url("background/rockywall/rrockywall.png");
+}
+
+h1 {
+	padding : 10px;
+	padding-bottom:20px;
+}
+
+.descTheme {
+	padding : 10px;
+	font-size :1.5em;
+}
+
+.col-xs-3 {
+	text-align: center;
+}
+#ligne1
+{
+	transition-duration: 2 ;
+}
+
+.themePicture
+{
+	box-shadow: 10px 5px 5px black;
+	border-radius: 10px;
+	height : 20vw;
+	width:20vw;
+}
+.themePicture:hover {opacity: 0.7;}
+
+#ligne1, #ligne2, #ligne3
+{
+	display : none;
+	margin-top : 20px;
+	margin-bottom: 10px;
+	margin-left : 10px;
+	margin-right: 10px;
+	padding :5px;
+	padding-bottom: 30px;
+  padding-top: 20px;
+	border:2px double black;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 20px black;
+}
+
+.row {
+	text-align:center;
+}
+
+.col-xs-3 {
+	border : 1px solid blue;
+}
+
+/*Mise en forme de la fenetre modale https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img*/
+.bigPicture {
+   /* border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;*/
+    max-height : 100%;
+    max-width : 100%;
+}
+
+.btn:focus{
+  background-color: transparent;
+  border: transparent;
+  padding: 0px;
+}
+
+
+/* The Modal (background) */
+.modal-dialog {
+	/*display : block;*/
+	width: 100%;
+    
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+   /* height: 150px;*/
+    border: 1px solid red;
+}
+
+.blabla {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px grey;
+  filter: grayscale();
+  margin: 0px;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img{
+  	filter: none;
+  }
+}
+.pict{
+	max-width: 100%;
+}
+.btn{
+	background-color: transparent;
+	border: transparent;
+	}
+.btn:hover{
+	background-color: transparent;
+	border: transparent;
+
+
+}
+.column img:hover{
+	filter: none;
+}
+
+
+
+
+/* Add Animation */
+/*.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+/*.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+/*@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/*.modal, .modal-hearder, .modal-body {
+	background-color : #2d2d30;
+	opacity : 0.9;
+	z-index: 2;
+	color : white;
+}
+
+.modal-title, .modal-content {
+	background-color : black;
+	color : white;
+}
+
+
+
+
+.bigPicture {
+	max-height : 80vh;
+	max-width : 80vw;
+	opacity:1;
+	z-index: 3 ;
+	margin:auto;
+
+}
+
+.modal-body 
+{
+	margin: auto;
+	width : 1200px !important;
+	border : 1px green;
+}
+
+.modal-dialog
+
+{
+
+	margin: auto;
+	width : 1200px !important;
+	border : 1px green;
+}*/
+
