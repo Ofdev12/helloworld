@@ -182,6 +182,24 @@ modalJs2.innerHTML =
 
 
 
+ 
+modalJs3.innerHTML = 
+	  makeModal('sculpture_007', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','sculpture_205','sculpture_004')
+	+ makeModal('sculpture_004', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_007','sculpture_003')
+	+ makeModal('sculpture_003', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_004','sculpture_006')
+	+ makeModal('sculpture_006', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_003','sculpture_002')
+	+ makeModal('sculpture_002', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_006','sculpture_005')
+	+ makeModal('sculpture_005', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_002','sculpture_207')
+
+	+ makeModal('sculpture_207', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','sculpture_005','sculpture_204')
+	+ makeModal('sculpture_204', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_207','sculpture_203')
+	+ makeModal('sculpture_203', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_204','sculpture_206')
+	+ makeModal('sculpture_206', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_203','sculpture_202')
+	+ makeModal('sculpture_202', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_206','sculpture_205')
+	+ makeModal('sculpture_205', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_202','sculpture_001')
+
+
+
 
 	/* suppression de la transition lors du click sur fleche*/
 
@@ -202,4 +220,3 @@ Array.from(document.getElementsByClassName('open-modal'))
 
 Array.from(document.getElementsByClassName('tClose'))
 	.forEach(btn => btn.addEventListener('click', enableAllFade))
-
