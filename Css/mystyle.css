@@ -42,6 +42,15 @@
 
 
 
+        /* carousel */
+
+#myCarousel{
+    max-height: 500;
+    margin-top: 50px;
+}
+        
+
+        
     /* Code page d'accueil */
 
 body{
@@ -86,14 +95,18 @@ article{
     border-radius: 100%;
 }
 
+@media (max-width: 770px) {
+    #margin_top {
+        margin-top: 0;
+    }
+}
 
-
+}
 @media (min-width: 400px) {
     .floatright{
         float: right;
     }
 }
-
 
 
 /* Footer */
@@ -131,7 +144,4 @@ footer{
 }
 footer p{
   margin-top: 20px;
-}
-#myCarousel{
-    margin-top:  50px;
 }
