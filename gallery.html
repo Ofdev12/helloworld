@@ -1,209 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Wildo Codak Professional Photographer</title>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-          <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="Css/mystyle.css">
-        <link rel="stylesheet" href="Css/gallery_css.css">
-    </head>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-          <a class="navbar-brand" href="index.html">Logos</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="Projet.html">PRICE AND CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-        </header>
-    
-         <div class="container-fluid marge">
-            <div class = "row">
-                <div class = "col-xs-12">
-                    <h1> Gallery </h1>
+<head>
+    <title>Wildo Codak Professional Photographer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Css/mystyle.css">
+    <link rel="stylesheet" href="Css/gallery_css.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Logos</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">GALLERY</a>
+                        </li>
+                        <li>
+                            <a href="Projet.html">PRICE AND CONTACT</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            
-            <!--ligne 1 des thèmes -->
+        </nav>
+    </header>
+
+    <div class="container-fluid marge">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1> Gallery </h1>
+            </div>
+        </div>
+
+        <!--ligne 1 des thèmes -->
+        <div class="row">
+            <div class="col-xs-4">
+                <Image src="Image/img/300px/tour_eiffel_md_001.jpg" alt="Eiffel Tower" id="bout1" class="themePicture">
+                    <div class="descTheme">Monuments </div>
+            </div>
+            <div class=" col-xs-4 ">
+                <Image src="Image/img/jardin/jardin_lux_001_carre.png" alt="jardin du luxembourg" id="bout2" class="themePicture">
+                    <div class="descTheme">Park & Garden </div>
+            </div>
+            <div class="col-xs-4 ">
+                <Image src="Image/img/300px/sculpture_md_001.jpg" alt="sculpture" id="bout3" class="themePicture">
+                    <div class="descTheme">Sculptures </div>
+            </div>
+        </div>
+
+        <!--lignes cachés pour développer les thèmes -->
+        <!--ligne 1 -->
+
+        <div class="row" id="ligne1">
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <div class="row blabla">
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#louvre_001">
+                                <Image class="pict" src="Image/img/200px/louvre_001.jpg" alt="arc de triomphe de nuit" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#arc_de_triomphe_002">
+                                <Image class="pict" src="Image/img/450px/arc_de_triomphe_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sacre_coeur_003">
+                                <Image class="pict" src="Image/img/300px/sacre_coeur_md_003.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#invalide_001">
+                                <Image class="pict" src="Image/img/300px/invalide_md_001.jpg" alt="arc de triomphe2" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sacre_coeur_002">
+                                <Image class="pict" src="Image/img/450px/sacre_coeur_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#tour_eiffel_003">
+                                <Image class="pict" src="Image/img/200px/tour_eiffel_xs_003.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#tour_eiffel_001">
+                                <Image class="pict" src="Image/img/450px/tour_eiffel_xl_001.jpg" alt="arc de triomphe2" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sacre_coeur_005">
+                                <Image class="pict" src="Image/img/200px/sacre_coeur_xs_005.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#invalide_003">
+                                <Image class="pict" src="Image/img/300px/invalide_md_003.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#tour_eiffel_002">
+                                <Image class="pict" src="Image/img/300px/tour_eiffel_md_002.jpg" alt="arc de triomphe2" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#arc_de_triomphe_003">
+                                <Image class="pict" src="Image/img/200px/arc_de_triomphe_xs_003.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#notre_dame_002">
+                                <Image class="pict" src="Image/img/450px/notre_dame_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ligne 2 -->
+        <div class="row" id="ligne2">
+            <div class="col-xs-12">
+                <Image src="http://via.placeholder.com/200x200" alt="themeGrid1">
+                    <Image src="http://via.placeholder.com/200x250" alt="themeGrid2">
+            </div>
+        </div>
+
+        <!-- ligne 3 -->
+        <div class="row" id="ligne3">
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <div class="row blabla">
+                        <div class="column col-sm-6">
+
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_007">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_007.jpg" alt="gargouille" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_004">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_004.jpg" alt="sculpture en or" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_003">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_003.jpg" alt="buste" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_006">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_006.jpg" alt="decoupe de visages" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_002">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_005">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_005.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+
+
+
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_207">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_007.jpg" alt="gargouille" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_204">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_004.jpg" alt="sculpture en or" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_203">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_003.jpg" alt="buste" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_206">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_006.jpg" alt="decoupe de visages" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_202">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_205">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_005.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--ligne 2 des thèmes -->
+        <div class="row">
+            <div class="col-xs-4">
+                <Image src="Image/img/300px/tour_eiffel_md_001.jpg" alt="Eiffel Tower" id="bout4" class="themePicture">
+                    <div class="descTheme">Graveyard </div>
+            </div>
+            <div class=" col-xs-4 ">
+                <Image src="Image/img/300px/sacre_coeur_md_003.jpg" alt="sacre coeur" id="bout5" class="themePicture">
+                    <div class="descTheme">Street art </div>
+            </div>
+            <div class="col-xs-4 ">
+                <Image src="Image/img/300px/sculpture_md_001.jpg" alt="sculpture" id="bout6" class="themePicture">
+                    <div class="descTheme">Unusual </div>
+            </div>
+        </div>
+
+        <!--Modal pour image qui apparait en grand : div de reception des fenetre modal créer en js-->
+        <div id="modalJs1">
+        </div>
+        <div id="modalJs2">
+        </div>
+        <div id="modalJs3">
+        </div>
+
+        <!-- TODO : lignes cachées lié à ligne theme 2 -->
+        <!--lignes cachés pour développer les thèmes de la ligne 2 des themes -->
+        <!--ligne 4 -->
+        <div class="row" id="ligne4">
+            <p> Ligne caché 4</p>
+        </div>
+
+        <!-- ligne 5 -->
+        <div class="row" id="ligne5">
+            <div class="container-fluid">
+                <div class="col-xs-12">
+                    <div class="row blabla">
+                        <div class="column col-sm-6">
+
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_007">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_007.jpg" alt="gargouille" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_004">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_004.jpg" alt="sculpture en or" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_003">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_003.jpg" alt="buste" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_006">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_006.jpg" alt="decoupe de visages" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_002">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_005">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_005.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+
+
+
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_207">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_007.jpg" alt="gargouille" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_204">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_004.jpg" alt="sculpture en or" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_203">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_003.jpg" alt="buste" )>
+                            </button>
+                        </div>
+                        <div class="column col-sm-6">
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_206">
+                                <Image class="pict" src="Image/img/300px/sculpture_md_006.jpg" alt="decoupe de visages" id="Image1">
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_202">
+                                <Image class="pict" src="Image/img/450px/sculpture_xl_002.jpg" alt="pyramid louvre" )>
+                            </button>
+                            <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sculpture_205">
+                                <Image class="pict" src="Image/img/200px/sculpture_xs_005.jpg" alt="pyramid louvre" )>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ligne 6 -->
+        <div class="row" id="ligne6">
+            <p> Ligne caché 6</p>
+        </div>
+
+
+        <!--Modal pour image qui apparait en grand : div de reception des fenetre modal créer en js-->
+        <div id="modalJs4">
+        </div>
+        <div id="modalJs5">
+        </div>
+        <div id="modalJs6">
+        </div>
+
+    </div>
+    <!-- fin container-fluid-->
+
+    </div>
+    <footer>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-4"> 
-                    <Image src="Image/img/300px/tour_eiffel_md_001.jpg" alt ="Eiffel Tower" id="bout1" class="themePicture">
-                    <div class ="descTheme">Monuments </div>
-                </div>
-                <div class=" col-xs-4 ">
-                    <Image src="Image/img/jardin/jardin_lux_001_carre.png" alt ="jardin du luxembourg" id="bout2" class="themePicture">
-                    <div class ="descTheme">Park & Garden </div>
-                </div>
-                <div class="col-xs-4 ">
-                    <Image src="Image/img/300px/sculpture_md_001.jpg" alt ="sculpture" id="bout3" class="themePicture">
-                    <div class ="descTheme">Sculptures </div>
-                </div>
-            </div>
-
-           <!--lignes cachés pour développer les thèmes -->
-            <!--ligne 1 -->
-          
-            <div class="row" id="ligne1">
-              <div class="container-fluid">
-                <div class ="col-xs-12">
-                  <div class="row blabla">
-                  <div class="column col-sm-6">
-                    <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#louvre_001">
-                        <Image  class="pict" src="Image/img/200px/louvre_001.jpg" alt ="arc de triomphe de nuit" id = "Image1">
-                    </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#arc_de_triomphe_002">
-                        <Image class="pict" src="Image/img/450px/arc_de_triomphe_xl_002.jpg" alt ="pyramid louvre")>
-                     </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sacre_coeur_003">
-                        <Image class="pict" src="Image/img/300px/sacre_coeur_md_003.jpg" alt ="pyramid louvre")>
-                     </button>
-                  </div>
-                  <div class="column col-sm-6">
-                    <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#invalide_001">
-                        <Image class="pict" src="Image/img/300px/invalide_md_001.jpg" alt ="arc de triomphe2" id = "Image1">
-                    </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sacre_coeur_002">
-                        <Image class="pict" src="Image/img/450px/sacre_coeur_xl_002.jpg" alt ="pyramid louvre")>
-                     </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#tour_eiffel_003">
-                        <Image class="pict" src="Image/img/200px/tour_eiffel_xs_003.jpg" alt ="pyramid louvre")>
-                     </button>
-                  </div>
-                  <div class="column col-sm-6">
-                    <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#tour_eiffel_001">
-                        <Image class="pict" src="Image/img/450px/tour_eiffel_xl_001.jpg" alt ="arc de triomphe2" id = "Image1">
-                    </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#sacre_coeur_005">
-                        <Image class="pict" src="Image/img/200px/sacre_coeur_xs_005.jpg" alt ="pyramid louvre")>
-                     </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#invalide_003">
-                        <Image class="pict" src="Image/img/300px/invalide_md_003.jpg" alt ="pyramid louvre")>
-                     </button>
-                  </div>
-                  <div class="column col-sm-6">
-                    <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#tour_eiffel_002">
-                        <Image class="pict" src="Image/img/300px/tour_eiffel_md_002.jpg" alt ="arc de triomphe2" id = "Image1">
-                    </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#arc_de_triomphe_003">
-                        <Image class="pict" src="Image/img/200px/arc_de_triomphe_xs_003.jpg" alt ="pyramid louvre")>
-                     </button>
-                     <button type="button" class="btn btn-info btn_lg" data-toggle="modal" data-target="#notre_dame_002">
-                        <Image class="pict" src="Image/img/450px/notre_dame_xl_002.jpg" alt ="pyramid louvre")>
-                     </button>
-                  </div>
-                  </div>
-                </div>
-            </div>
-            </div>
-            
-
-            <!-- ligne 2 -->
-            <div class="row" id="ligne2">
-                <div class ="col-xs-12"><Image src="http://via.placeholder.com/200x200" alt ="themeGrid1">
-                    <Image src="http://via.placeholder.com/200x250" alt ="themeGrid2">
-                </div>
-            </div>
-
-            <!-- ligne 3 -->
-            <div class="row" id="ligne3" >
-                <div class ="col-xs-12"><Image src="http://via.placeholder.com/300x300" alt ="themeGrid1">
-                    <Image src="http://via.placeholder.com/300x350" alt ="themeGrid2">
-                </div>
-            </div>
-
-            <!--ligne 2 des thèmes -->
-            <div class="row">
-                <div class="col-xs-4"> 
-                    <Image src="Image/img/300px/tour_eiffel_md_001.jpg" alt ="Eiffel Tower" id="bout4" class="themePicture">
-                    <div class ="descTheme">Graveyard </div>
-                </div>
-                <div class=" col-xs-4 ">
-                    <Image src="Image/img/300px/sacre_coeur_md_003.jpg" alt ="sacre coeur" id="bout5" class="themePicture">
-                    <div class ="descTheme">Street art </div>
-                </div>
-                <div class="col-xs-4 ">
-                    <Image src="Image/img/300px/sculpture_md_001.jpg" alt ="sculpture" id="bout6" class="themePicture">
-                    <div class ="descTheme">Unusual </div>
-                </div>
-            </div>
-
-            <!--Modal pour image qui apparait en grand : div de reception des fenetre modal créer en js-->
-            <div id = "modalJs1"> 
-            </div>
-            <div id = "modalJs2"> 
-            </div>
-            <div id = "modalJs3"> 
-            </div>
-
-<!-- TODO : lignes cachées lié à ligne theme 2 -->
-           <!--lignes cachés pour développer les thèmes de la ligne 2 des themes --> 
-            <!--ligne 4 -->
-            <div class="row" id="ligne4">
-              <p> Ligne caché 4</p>
-            </div>
-
-           <!-- ligne 5 -->
-            <div class="row" id="ligne5">
-               <p> Ligne caché 5</p>
-            </div>
-
-            <!-- ligne 6 -->
-            <div class="row" id="ligne6" >
-               <p> Ligne caché 6</p>
-            </div>
-
-
-            <!--Modal pour image qui apparait en grand : div de reception des fenetre modal créer en js-->
-            <div id = "modalJs4">
-            </div>
-            <div id = "modalJs5">
-            </div>
-            <div id = "modalJs6">
-            </div>
-
-         </div><!-- fin container-fluid-->
-
-        </div>
-           <footer>
-             <div class="container-fluid">
-              <div class="row">
                 <div class="col-sm-offset-2 col-md-offset-1 col-xs-12 col-md-6">
-                  <p>Copyright Wildo Codak Professional Photographer 2017 - 2018</p>
+                    <p>Copyright Wildo Codak Professional Photographer 2017 - 2018</p>
                 </div>
                 <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-0 col-xs-1 col-md-1">
-                  <a href="https://www.facebook.com" id="fb" target="_blank"></a>
+                    <a href="https://www.facebook.com" id="fb" target="_blank"></a>
                 </div>
                 <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
-                  <a href="https://www.twitter.com" id="tw" target="_blank"></a>
+                    <a href="https://www.twitter.com" id="tw" target="_blank"></a>
                 </div>
                 <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
-                  <a href="https://www.instagram.com" id="ig" target="_blank"></a>
+                    <a href="https://www.instagram.com" id="ig" target="_blank"></a>
                 </div>
                 <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
-                  <a href="https://plus.google.com" id="gp" target="_blank"></a>
+                    <a href="https://plus.google.com" id="gp" target="_blank"></a>
                 </div>
-              </div>
             </div>
-      </footer>
-        <script src= "js/gallery_js.js"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="js/gallery_js.js"></script>
+</body>
+
 </html>

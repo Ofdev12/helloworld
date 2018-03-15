@@ -148,15 +148,30 @@ const makeModal = (src, desc,srcPrec,srcSuiv) => `
 </div>
 `
 
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('louvre_001', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','notre_dame_002','arc_de_triomphe_002');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('arc_de_triomphe_002', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','louvre_001','sacre_coeur_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_003','','arc_de_triomphe_002','invalide_001');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('invalide_001','','sacre_coeur_003','sacre_coeur_002','sacre_coeur_003','tour_eiffel_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_002','','invalide_001','tour_eiffel_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_003','','sacre_coeur_002','tour_eiffel_001');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_001','','tour_eiffel_003','sacre_coeur_005');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_005','','tour_eiffel_001','invalide_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('invalide_003','','sacre_coeur_005','tour_eiffel_002');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_002','','invalide_003','arc_de_triomphe_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('arc_de_triomphe_003','','tour_eiffel_002','notre_dame_002');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('notre_dame_002','','arc_de_triomphe_003','louvre_001');
+modalJs1.innerHTML = makeModal('louvre_001', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','notre_dame_002','arc_de_triomphe_002')
++ makeModal('arc_de_triomphe_002', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','louvre_001','sacre_coeur_003')
++ makeModal('sacre_coeur_003','','arc_de_triomphe_002','invalide_001')
++ makeModal('invalide_001','','sacre_coeur_003','sacre_coeur_002','sacre_coeur_003','tour_eiffel_003')
++ makeModal('sacre_coeur_002','','invalide_001','tour_eiffel_003')
++ makeModal('tour_eiffel_003','','sacre_coeur_002','tour_eiffel_001')
++ makeModal('tour_eiffel_001','','tour_eiffel_003','sacre_coeur_005')
++ makeModal('sacre_coeur_005','','tour_eiffel_001','invalide_003')
++ makeModal('invalide_003','','sacre_coeur_005','tour_eiffel_002')
++ makeModal('tour_eiffel_002','','invalide_003','arc_de_triomphe_003')
++ makeModal('arc_de_triomphe_003','','tour_eiffel_002','notre_dame_002')
++ makeModal('notre_dame_002','','arc_de_triomphe_003','louvre_001')
+ 
+ modalJs3.innerHTML = 
+  makeModal('sculpture_007', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','sculpture_205','sculpture_004')
++ makeModal('sculpture_004', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_007','sculpture_003')
++ makeModal('sculpture_003', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_004','sculpture_006')
++ makeModal('sculpture_006', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_003','sculpture_002')
++ makeModal('sculpture_002', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_006','sculpture_005')
++ makeModal('sculpture_005', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_002','sculpture_207')
+
++ makeModal('sculpture_207', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','sculpture_005','sculpture_204')
++ makeModal('sculpture_204', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_207','sculpture_203')
++ makeModal('sculpture_203', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_204','sculpture_206')
++ makeModal('sculpture_206', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_203','sculpture_202')
++ makeModal('sculpture_202', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_206','sculpture_205')
++ makeModal('sculpture_205', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','sculpture_202','sculpture_001')
