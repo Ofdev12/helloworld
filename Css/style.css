@@ -11,6 +11,10 @@
 
 
 
+
+
+
+
 /* Add a gray color to all navbar links */
 
 .navbar li a,
@@ -20,11 +24,19 @@
 
 
 
+
+
+
+
 /* On hover, the links will turn white */
 
 .navbar-nav li a:hover {
     color: #fff !important;
 }
+
+
+
+
 
 
 
@@ -37,11 +49,19 @@
 
 
 
+
+
+
+
 /* Remove border color from the collapsible button */
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
+
+
+
+
 
 
 
@@ -54,11 +74,19 @@
 
 
 
+
+
+
+
 /* Dropdown links */
 
 .dropdown-menu li a {
     color: #000 !important;
 }
+
+
+
+
 
 
 
@@ -68,11 +96,24 @@
     background-color: red !important;
 }
 
+
+
+
+
+/* Footer */
+
 footer {
-    padding: 45px;
+    padding: 60px;
+    padding-top: 20px;
     background-color: #2d2d30;
     color: #d5d5d5;
 }
+
+
+
+
+
+/* Social network */
 
 #fb,
 #tw,
@@ -85,34 +126,43 @@ footer {
 }
 
 #fb {
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -1px 0px;
 }
 
 #tw {
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -54px 0px;
 }
 
 #ig {
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -55px -54px;
 }
 
 #gp {
-    background-image: url(logos_sociaux.jpg);
+    background-image: url(../Image/logos_sociaux/logos_sociaux.jpg);
     background-position: -1px -54px;
 }
+
+footer p {
+    margin-top: 20px;
+}
+
+
+
+
 
 
 
 /*Début du CSS pour le prix*/
 
 body {
-    font-family: Montserrat;
     background-image: url(../Image/rockywall.png);
-    box-shadow: inset 0px -100px 400px 150px rgba(0,0,0,0.3);
-
+    box-shadow: inset 0px -100px 400px 150px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
 }
 
 h1 {
@@ -122,9 +172,28 @@ h1 {
     color: #2d2d30;
 }
 
+h2 {
+    margin-bottom: -30px;
+    text-align: center;
+    color: #2d2d30;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 3px 5px 5px grey;
+    margin-bottom: 35px;
+    margin-top: 35px
+}
+
+
+.paddingTxt {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 .Lorem {
     padding: 30px;
-    margin-top: 10px;
+    margin-top: 50px;
     text-align: center
 }
 
@@ -149,7 +218,6 @@ th {
 
 input[type=text],
 textarea {
-    width: 80%;
     padding: 10px;
     border: 1px solid #a6a6a6;
     border-radius: 4px;
@@ -157,11 +225,13 @@ textarea {
     margin-bottom: 0px;
     resize: none;
 }
+
 #message {
     padding-top: inherit 5px;
     padding-bottom: 50px;
     overflow: hidden;
 }
+
 input[type=submit] {
     background-color: #2d2d30;
     color: white;
@@ -174,26 +244,25 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255);
     color: black;
     border: 1px solid #2d2d30;
     border-radius: 4px
 }
 
 label {
-    margin-top: 10px
+    margin-top: 30px
 }
 
 .image {
     overflow: hidden;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    max-width: 150%
-    min-width: 80%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    max-width: 150% min-width: 80%;
     margin-top: 35px;
-
 }
+
 .imgg {
     text-align: center;
 }
@@ -209,3 +278,4 @@ select {
     background-color: white;
     color: #666666
 }
+

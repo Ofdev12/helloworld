@@ -39,19 +39,21 @@
         <div class="row">
             <h1 class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-lg-8"> Prices & Contact </h1>
         </div>
-        <section id="présentation">
+        <section id="présentation" class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8  flex-direction paddingTxt">
             <div class="row">
-                <div class="col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-3 imgg">
-                    <img src="http://placehold.it/150" alt="Photo du photographe" class="image">
+                <h2>Présentation détaillée de Wildo Kodak</h2>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-md-offset-2 col-md-4 col-lg-4 imgg">
+                    <img src="Image/wcs.png" alt="Wildo Codak" class="image">
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-2 col-md-6 col-md-offset-1 col-lg-4  em">
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-md-4 col-lg-4  Lorem">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </section>
-        <section id="prix">
+        <section id="prix" class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8  flex-direction paddingTxt">
             <div class="row">
-                <table class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4">
+                 <h2>Tableau des prix</h2>
+                <table class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8">
                     <tr>
                         <th class="fline">SIZE</th>
                         <th class="fline">Simple</th>
@@ -79,23 +81,25 @@
                 </table>
             </div>
         </section>
-        <section id="Contact">
+        <section id="Contact" class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8  flex-direction paddingTxt">
             <form>
                 <div class="row">
-                    <label for="first name" class="col-xs-offset-1">Name: </label>
+                     <h2>Formulaire de contact</h2>
+                     <br><br><br>
+                    <label for="first name" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2">Name: </label>
                     <br>
-                    <input type="text" name="fname" placeholder="Name.." id="fname" class="col-xs-offset-1" />
+                    <input type="text" name="fname" placeholder="Name.." id="fname" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2" />
                 </div>
                 <div class="row">
-                    <label for="last name" class="col-xs-offset-1">Subject: </label>
+                    <label for="last name" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2">Subject: </label>
                     <br>
-                    <input type="text" name="Subject" placeholder="Subject.." id="lname" class="col-xs-offset-1" />
+                    <input type="text" name="Subject" placeholder="Subject.." id="lname" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2" />
                 </div>
                 <div class="row">
-                    <label for="textarea" class="col-xs-offset-1">Country: </label>
+                    <label for="textarea" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2">Country: </label>
                     <br>
-                    <select name="country" class="col-xs-offset-1">
-                        <option value="Selection" selected="selected" class="col-xs-offset-1">Select a country.. </option>
+                    <select name="country" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2">
+                        <option value="Selection" selected="selected" class="col-xs-offset-2 col-xs-8">Select a country.. </option>
                         <option value="France">France </option>
                         <option value="Etats_Unis">United States </option>
                         <option value="Germany">Germany </option>
@@ -103,20 +107,20 @@
                     </select>
                 </div>
                 <div class="row">
-                    <label for="textarea" class="col-xs-offset-1">Message: </label>
+                    <label for="textarea" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2 ">Message: </label>
                     <br>
-                    <textarea name="message" placeholder="Your message.." id="message" class="col-xs-offset-1" maxlength="400" onkeyup="reste(this.value);"></textarea>
-                    <br />
-                    <span id="caracteres" class="col-xs-offset-1">400</span> characters left
+                    <textarea name="message" placeholder="Your message.." id="message" class="col-xs-offset-1 col-xs-10 col-sm-8 col-sm-offset-2" maxlength="400" onkeyup="reste(this.value);"></textarea>
+                    <br>
+                    <span id="caracteres" class="col-xs-offset-1 col-sm-offset-2">400</span> characters left
                     <script type="text/javascript">
                     function reste(texte) {
-                        var restants = 400 - texte.length;
+                        let restants = 400 - texte.length;
                         document.getElementById('caracteres').innerHTML = restants;
                     }
                     </script>
                 </div>
                 <div class="row ">
-                    <input type="submit" value="Send your Message " id="submit" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5">
+                    <input type="submit" value="Send your Message" id="submit" class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-2 col-lg-offset-5" >
                 </div>
                 <div class=row>
                 </div>
@@ -125,21 +129,23 @@
     </div>
     <footer>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-offset-2 col-md-offset-1 col-xs-12 col-md-6">
-                    <p>Copyright Wildo Codak Professional Photographer 2017 - 2018</p>
-                </div>
-                <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-0 col-xs-1 col-md-1">
-                    <a href="https://www.facebook.com" id="fb" target="_blank"></a>
-                </div>
-                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
-                    <a href="https://www.twitter.com" id="tw" target="_blank"></a>
-                </div>
-                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
-                    <a href="https://www.instagram.com" id="ig" target="_blank"></a>
-                </div>
-                <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
-                    <a href="https://plus.google.com" id="gp" target="_blank"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-offset-2 col-md-offset-0 col-xs-12 col-md-6">
+                        <p>Copyright Wildo Codak Professional Photographer 2017 - 2018</p>
+                    </div>
+                    <div class="col-xs-offset-1 col-sm-offset-2 col-md-offset-0 col-xs-1 col-md-1">
+                        <a href="https://www.facebook.com" id="fb" target="_blank"></a>
+                    </div>
+                    <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
+                        <a href="https://www.twitter.com" id="tw" target="_blank"></a>
+                    </div>
+                    <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
+                        <a href="https://www.instagram.com" id="ig" target="_blank"></a>
+                    </div>
+                    <div class="col-xs-offset-1 col-sm-offset-1 col-md-offset-0 col-xs-1 col-md-1">
+                        <a href="https://plus.google.com" id="gp" target="_blank"></a>
+                    </div>
                 </div>
             </div>
         </div>
