@@ -28,6 +28,7 @@ h1 {
 .descTheme {
 	padding : 10px;
 	font-size :1.5em;
+  padding-bottom : 30px;
 }
 
 .col-xs-3 {
@@ -148,8 +149,6 @@ image {
 /************Formatting the modal windows https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img*/
 .bigPicture {
     max-height : 80vh;
-    /*max-width : 100%;*/
-    /*max-height : 100%;*/
     max-width : 85vw;
     border: 5px solid white;
 }
@@ -161,19 +160,15 @@ image {
     background-color : rgba(0,0,0,0.7);
     border : 1px solid white;
     padding-left:7px;
-    /*padding-right:7px;*/
 }
 
 .modal-dialog {
-
-	/*border : 2px solid green;*/
 	background-color : transparent;
 	color : white;
 	width : auto;
-  height : auto;
-/
-    
+  height : auto;    
 }
+
 .modal .close {
   color : white;
  font-size : 2em;
@@ -193,7 +188,6 @@ image {
 }
 .modal-footer .btn:hover {
   color : black;
- /* padding:3px;*/
 }
 .modal-titre {
   font-size : 3em;
@@ -202,47 +196,68 @@ image {
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
-    /*display: block;
-    width: 100%;*/
-    /*max-width: 700px;*/
     background-color : rgba(0,0,0,0.82);
     width : auto;
     height : auto;
     text-align : center;
-
-    /*background-color : #2d2d30;*/
     border : 1px solid white;
 }
 
 .modal-boby {
-	/*border : 10px solid purple;*/
-	/*	width: 700px;
-	background-color : blue;*/
 }
 
 
 .flecheGauche {
   font-size: 4em;
   color : white;
-  /*border:1px solid red;*/
 }
 
 .flecheDroite {
   font-size: 4em;
   color:white;
-  /*border:1px solid blue;*/
 }
+
 .imageContent{
-  /*border:1px solid green;*/
   display: flex;
   justify-content:space-between;
 }
 
 .imageContent .btn:hover {
-  /*color: black;*/
   background-color:#2d2d30;
 }
 
+.descBig {
+  padding-top : 10px;
+  font-size : 1.5em;
+}
+
+/**** sur portable *****************/
+@media (max-width: 500px) {
+  .descTheme {
+    display :none;
+  }
+  .col-xs-4 {
+    padding-bottom : 50px;
+  }
+.flecheGauche {
+  font-size: 1.5em;
+}
+
+.flecheDroite {
+  font-size: 1.5em;
+}
+.descBig {
+  font-size : 1em;
+  padding-top: 0px;
+}
+h1 {
+  padding : 10px;
+  padding-bottom:60px;
+  padding-top: 40px;
+  font-size: 3em;
+}
+
+}
 
 
 

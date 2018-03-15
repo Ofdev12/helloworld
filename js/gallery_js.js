@@ -14,6 +14,8 @@ const ligne3Elt = document.getElementById("ligne3");
 const ligne4Elt = document.getElementById("ligne4");
 const ligne5Elt = document.getElementById("ligne5");
 const ligne6Elt = document.getElementById("ligne6");
+const modalJs1 = document.getElementById("modalJs1");
+const modalJs2 = document.getElementById("modalJs2");
 
 
 
@@ -129,34 +131,75 @@ const makeModal = (src, desc,srcPrec,srcSuiv) => `
             </div>
             <div class="modal-body">
                  <div class= imageContent>
-            		<button type ="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#${srcPrec}" >
+            		<button type ="button" class="btn btn-default " data-dismiss="modal" data-toggle="modal" data-target="#${srcPrec}" >
             			<div class="flecheGauche"> < </div>
            			</button>
                  	<img class="bigPicture" src="Image/img/${src}.jpg" alt="${src}">
 
-                 	<button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#${srcSuiv}">
+                 	<button type="button" class="btn btn-default " data-dismiss="modal" data-toggle="modal" data-target="#${srcSuiv}">
                  		<div class="flecheDroite"> > </div>
                  	</button>
                  </div>
                 <div class = descBig>${desc}</div>
             </div>
             <div class= "modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default tClose" data-dismiss="modal">Close</button>
             </div>
         </div>
      </div>
 </div>
 `
 
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('louvre_001', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','notre_dame_002','arc_de_triomphe_002');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('arc_de_triomphe_002', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','louvre_001','sacre_coeur_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_003','','arc_de_triomphe_002','invalide_001');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('invalide_001','','sacre_coeur_003','sacre_coeur_002','sacre_coeur_003','tour_eiffel_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_002','','invalide_001','tour_eiffel_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_003','','sacre_coeur_002','tour_eiffel_001');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_001','','tour_eiffel_003','sacre_coeur_005');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('sacre_coeur_005','','tour_eiffel_001','invalide_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('invalide_003','','sacre_coeur_005','tour_eiffel_002');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('tour_eiffel_002','','invalide_003','arc_de_triomphe_003');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('arc_de_triomphe_003','','tour_eiffel_002','notre_dame_002');
-modalJs1.innerHTML = modalJs1.innerHTML + makeModal('notre_dame_002','','arc_de_triomphe_003','louvre_001');
+
+modalJs1.innerHTML =
+	  makeModal('louvre_001', 'The pyramid of the Louvre is a pyramid made of glass and metal, located in the middle of the Napoleon courtyard of the Louvre Museum in Paris.','notre_dame_002','arc_de_triomphe_002')
+	+ makeModal('arc_de_triomphe_002', 'The Arc de Triomphe is located in the center of the roundabout of the Place Charles de Gaule.','louvre_001','sacre_coeur_003')
+	+ makeModal('sacre_coeur_003','','arc_de_triomphe_002','invalide_001')
+	+ makeModal('invalide_001','','sacre_coeur_003','sacre_coeur_002','sacre_coeur_003','tour_eiffel_003')
+	+ makeModal('sacre_coeur_002','','invalide_001','tour_eiffel_003')
+	+ makeModal('tour_eiffel_003','','sacre_coeur_002','tour_eiffel_001')
+	+ makeModal('tour_eiffel_001','','tour_eiffel_003','sacre_coeur_005')
+	+ makeModal('sacre_coeur_005','','tour_eiffel_001','invalide_003')
+	+ makeModal('invalide_003','','sacre_coeur_005','tour_eiffel_002')
+	+ makeModal('tour_eiffel_002','','invalide_003','arc_de_triomphe_003')
+	+ makeModal('arc_de_triomphe_003','','tour_eiffel_002','notre_dame_002')
+	+ makeModal('notre_dame_002','','arc_de_triomphe_003','louvre_001')
+
+
+modalJs2.innerHTML =
+	  makeModal('bridge-monceau', '','chairs-lux','paris_tree_graveyard')
+	+ makeModal('paris_tree_graveyard', '','bridge-monceau','mur_vegetal')
+	+ makeModal('mur_vegetal','','paris_tree_graveyard','palace-of-the-luxembourg')
+	+ makeModal('palace-of-the-luxembourg','','mur_vegetal','paris-flowers')
+	+ makeModal('paris-flowers','','palace-of-the-luxembourg','colonnade-monceau')
+	+ makeModal('colonnade-monceau','','paris-flowers','wall-garden')
+	+ makeModal('wall-garden','','colonnade-monceau','paris_tree_snow')
+	+ makeModal('paris_tree_snow','','wall-garden','paris-jardin_plante')
+	+ makeModal('paris-jardin_plante','','paris_tree_snow','paris-sculture-buisson')
+	+ makeModal('paris-sculture-buisson','','paris-jardin_plante','paris-tuilerie')
+	+ makeModal('paris-tuilerie','','paris-sculture-buisson','chairs-lux')
+	+ makeModal('chairs-lux','','paris-tuilerie','bridge-monceau')
+
+
+
+
+	/* suppression de la transition lors du click sur fleche*/
+
+
+const modals = Array.from(document.getElementsByClassName('modal'))
+
+const disableFade = elem => elem.classList.remove('fade')
+const enableFade = elem => elem.classList.add('fade')
+
+const disableAllFadesLater = () =>
+	setTimeout(() => modals.forEach(disableFade), 1000)
+
+const enableAllFade = () => 
+	modals.forEach(enableFade)
+
+Array.from(document.getElementsByClassName('open-modal'))
+	.forEach(btn => btn.addEventListener('click', disableAllFadesLater))
+
+Array.from(document.getElementsByClassName('tClose'))
+	.forEach(btn => btn.addEventListener('click', enableAllFade))
+
