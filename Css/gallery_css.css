@@ -3,6 +3,9 @@
 	margin-bottom: 60px;
 }
 
+html {
+  overflow-y: scroll;
+}
 
 
 body {
@@ -25,6 +28,7 @@ h1 {
 .descTheme {
 	padding : 10px;
 	font-size :1.5em;
+  padding-bottom : 30px;
 }
 
 .col-xs-3 {
@@ -44,7 +48,7 @@ h1 {
 }
 .themePicture:hover {opacity: 0.7;}
 
-#ligne1, #ligne2, #ligne3
+#ligne1, #ligne2, #ligne3,#ligne4, #ligne5, #ligne6
 {
 	display : none;
 	margin-top : 20px;
@@ -75,16 +79,9 @@ image {
 	border : 1px solid blue;
 }
 
-/*Mise en forme de la fenetre modale https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img*/
-.bigPicture {
-    max-height : 80vh;
-    /*max-width : 100%;*/
-    /*max-height : 100%;*/
-    max-width : 90vw;
-    border: 5px solid white;
-}
+/**************formatting the image grid ******************************************/
 
-.btn:focus{
+.blabla .btn:focus{
   background-color: transparent;
   border: transparent;
   padding: 0px;
@@ -135,11 +132,11 @@ image {
 .pict{
 	max-width: 100%;
 }
-.btn{
+.blabla .btn{
 	background-color: transparent;
 	border: transparent;
 	}
-.btn:hover{
+.blabla .btn:hover{
 	background-color: transparent;
 	border: transparent;
 
@@ -149,6 +146,12 @@ image {
 	filter: none;
 }
 
+/************Formatting the modal windows https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img*/
+.bigPicture {
+    max-height : 80vh;
+    max-width : 85vw;
+    border: 5px solid white;
+}
 
 .modal {
 
@@ -156,42 +159,114 @@ image {
   	max-width: 100%; /* Full height */
     background-color : rgba(0,0,0,0.7);
     border : 1px solid white;
+    padding-left:7px;
 }
 
 .modal-dialog {
-
-	/*border : 2px solid green;*/
 	background-color : transparent;
 	color : white;
 	width : auto;
-    height : auto;
-/
-    
+  height : auto;    
+}
+
+.modal .close {
+  color : white;
+ font-size : 2em;
+}
+.modal .close {
+  color : white;
+ font-size : 2em;
 }
 
 .modal-header {
 	background-color : #2d2d30;
 }
-
+.modal-footer {
+  background-color : #2d2d30;
+  color : white;
+  padding:3px;
+}
+.modal-footer .btn {
+  color : white;
+  font-size : 1.5em;
+}
+.modal-footer .btn:hover {
+  color : black;
+}
+.modal-titre {
+  font-size : 3em;
+}
 
 /* Modal Content (image) */
 .modal-content {
     margin: auto;
-    /*display: block;
-    width: 100%;*/
-    /*max-width: 700px;*/
     background-color : rgba(0,0,0,0.82);
     width : auto;
     height : auto;
     text-align : center;
-
-    /*background-color : #2d2d30;
-    border : 1px solid red;*/
+    border : 1px solid white;
 }
 
 .modal-boby {
-	/*border : 10px solid purple;
-		width: 700px;
-	background-color : blue;*/
 }
+
+
+.flecheGauche {
+  font-size: 4em;
+  color : white;
+}
+
+.flecheDroite {
+  font-size: 4em;
+  color:white;
+}
+
+.imageContent{
+  display: flex;
+  justify-content:space-between;
+}
+
+.imageContent .btn:hover {
+
+  background-color:#2d2d30;
+}
+
+.descBig {
+  padding-top : 10px;
+  font-size : 1.5em;
+}
+
+/**** sur portable *****************/
+@media (max-width: 500px) {
+  .descTheme {
+    display :none;
+  }
+  .col-xs-4 {
+    padding-bottom : 50px;
+  }
+.flecheGauche {
+  font-size: 1.5em;
+}
+
+.flecheDroite {
+  font-size: 1.5em;
+}
+.descBig {
+  font-size : 1em;
+  padding-top: 0px;
+}
+h1 {
+  padding : 10px;
+  padding-bottom:60px;
+  padding-top: 40px;
+  font-size: 3em;
+}
+
+}
+
+}
+
+
+
+
 
